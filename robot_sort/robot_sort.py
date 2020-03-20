@@ -106,7 +106,6 @@ class SortingRobot:
                 if self.compare_item() == -1 or self.compare_item() == None:
                     self.swap_item()
                     self.move_right()
-                    self.set_light_on()
                 else:
                     self.move_right()
             while self.can_move_left():

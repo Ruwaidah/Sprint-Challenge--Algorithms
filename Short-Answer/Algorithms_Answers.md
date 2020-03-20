@@ -2,10 +2,10 @@
 
 ## Exercise I
 
-a) O(n) on loop
+a) O(n) one loop
 
 
-b) O(n^2)
+b) O(n^2) 2 loop
 
 
 c) O(n)
