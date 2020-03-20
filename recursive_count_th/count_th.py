@@ -12,7 +12,7 @@ def count_th(word):
     index = word.find('th')
     print("index", index, "word", word)
     if index != -1:
-        count = count + 1 + count_th(word[index+2:])
+        count = 1 + count_th(word[index+2:])
     return count
 
 
