@@ -102,14 +102,15 @@ class SortingRobot:
         while self.light_is_on():
             self.set_light_off()
             while self.can_move_right():
-                # swap if the robot have the small number
+                # make the robot get the bigger number as we move to last index
                 if self.compare_item() == -1 or self.compare_item() == None:
                     self.swap_item()
                     self.move_right()
+                    self.set_light_on()
                 else:
                     self.move_right()
-
             while self.can_move_left():
+                # make the robot get the smaller number as we move to the index one
                 if self.compare_item() == 1:
                     self.swap_item()
                     self.move_left()
